@@ -1,0 +1,26 @@
+<html>
+    <script>
+        /*
+         * Feu una funció anomenada sense, que admeti com a paràmetre 
+         * un objecte qualsevol i el nom d’una clau. Ha de retornar l’objecte 
+         * passat sense la clau i valor que coincideixi amb el paràmetre.
+        */
+        const scoreBoard = {
+            'Dave Thomas': 44,
+            'Freyja Ćirić': 539,
+            'José Valim': 265,
+        }
+
+        function sense (obj, nomClau){
+            for (i in obj) {
+                if (i == nomClau){
+                    delete obj[nomClau]
+                    return obj
+                }
+            }
+            return console.log("No se ha encontrado el nombre")
+        }
+        
+        console.log(sense(scoreBoard, "Dave Thomas"))
+    </script>
+</html>
