@@ -1,0 +1,23 @@
+<html>
+    <script>
+        // Feu una funció anomenada calculaPuntuacio que admeti com a paràmetre un objecte amb puntuacions de persones, com per exemple el següent:  
+        const scoreBoard = {
+            'Dave Thomas': 44,
+            'Freyja Ćirić': 539,
+            'José Valim': 265,
+        }
+        
+        function calculaPuntuacio (obj) {
+            n=0
+            for (i in obj){
+                n++
+            }
+            let puntos = Object.values(obj);
+            let total = puntos.reduce((a, b) => a + b, 0);
+            return total / n
+        }
+        
+        console.log(calculaPuntuacio(scoreBoard));
+
+    </script>
+</html>
