@@ -1,5 +1,38 @@
 <html>
-    <script>
+    <body>
         
+    </body>
+    <script>
+        /*
+         * Feu una “classe” (utilitzeu la sintaxis de prototips) 
+         * anomenada Matriu que tingui els següents mètodes:
+        */
+        function Matriu(height,width) {
+            this.height = height;
+            this.width = width;
+
+            function getHeight() {
+                return this.height;
+            };
+
+            function getWidth() {
+                return this.width;
+            };
+
+            function print() {
+                return 
+            }
+
+            function fromArray(height, width, llista){
+                let rows = document.querySelector("body").children
+                let matrix = []
+                for (var i = 0; i < rows.length; i++) {
+                    matrix.push(rows[i].children)
+                }
+            }
+
+        }
+        Matriu.fromArray(3,3,[1,2,3,4,5,6,7,8,9]).print()
+
     </script>
 </html>
